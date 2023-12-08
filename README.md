@@ -1,70 +1,126 @@
+===================================================
 # Getting Started with Create React App
+===================================================
+# How to run the application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Make sure you have these installed on your system:
+- Yarn 
+- Express
+- Nodemon
+- CORS
+- Axios
+- Jquery
+- React
+- React-dom
+- React-router-dom
 
-## Available Scripts
+# You need 2 CMDs for this to run as needed, by following these steps:
 
-In the project directory, you can run:
+- In the first CMD (FrontEnd):
+    - cd into the client folder (cd Desktop/ChatApp/client/)
+    
+- On the second CMD (BackEnd):
+    - cd into the server folder (cd Desktop/ChatApp/server/)
+    
+# On both CMDs (Ignore the quotes): 
+    - Start the backend by typing 'yarn start', then;
+    - Start the frontend by typing 'yarn start'
 
-### `npm start`
+***If done correctly, __the server side should listen to port 5000 and connect to MySQL__ and creates 5 tables. And __the frontend should listen to port 3000 locally and compile successfully__. All the data should get stored as the user uses the application***
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Features: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Allow users to create personal chatrooms
+    - Choose a unique channel name
+    - Add a limit of members to join the channel
+    - Either make it a public or private channel
+    - Check the channel details by viewing which members are in it
 
-### `npm test`
+## Allows users to search for channel
+    - The search bar at the top allows you to search for a specific channel made
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Allows users to communicate to eachothers in chats
+    - Just like any other messaging application, ChatRoom allows you to message with other accounts
 
-### `npm run build`
+## Allows users to reply to other people in group chats
+    - Gives you the option to nest a conversation so it does not get messy
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Allows users to view which memeber has joined the channel, and who left
+    - Displays on the screen who joined/left the channel
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Allows the creater of the channel to delete the channel
+    - Gives an option to delete a channel (only to the creator)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Allows users to log out the account 
+    - Users can click the logout button at the top right to signout
 
-### `npm run eject`
+## Displays the time a message has been sent
+    - Shows the current time the message has been sent
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Resquest access to enter a private channel
+    - If a channel is private, a user can request access to the owner to get permission to enter
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## The admin account can join any channel (private or public)
+    - The admin account has access to do anything
+    - If a channel is either public or private, access is allowed
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Admin can delete any message/channel
+    - If you are logged in the admin account: 
+    - You have access to delete any message, on any group chat; or delete the full channel
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# DataBase:
 
-## Learn More
+## This application uses MySQL which stores all of the information
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    > Open MySQL WorkBench
+        - Run simple MySQL commands to access the information, such as:
+            show databases;
+            use chatroom;
+            show tables;
+            SELECT * FROM channels;
+    
+            - This displays all the channels made in the system
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# More information about the applicaton:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Backend:
+          
+    axios
+    bcryptjs
+    body-parser
+    cookie-parser
+    cors
+    crypto
+    dotenv
+    express
+    http
+    jsonwebtoken
+    mysql
+    nodemon
+    socket.io
+    util
+    uuid
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Frontend:
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    @emotion/react
+    @emotion/styled
+    @mui/icons-material
+    @mui/material
+    @testing-library/jest-dom
+    @testing-library/react
+    @testing-library/user-event
+    axios
+    jquery
+    lodash
+    material-ui-popup-state
+    moment
+    react
+    react-dom
+    react-notifications
+    react-router-dom
+    react-scripts
+    socket.io-client
+    web-vitals
